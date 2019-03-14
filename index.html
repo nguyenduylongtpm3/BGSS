@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login_div" class="main-div">
+        
+            <h3>Vui lòng đăng nhập để vào hệ thống</h3>
+            <input type="email" name="email_field" placeholder="Enter Email" id="email_field">
+            <input type="password" name="password_field" placeholder="Enter Password" id="password_field">
+            <button onclick="login()">Đăng nhập</button>
+            <button onclick="create_ac()">Tạo tài khoản</button>
+                
+        
+    </div>
+    <div id="user_div" class="loggedin-div">
+        
+            <h3>Đăng nhập thành công!!!</h3>
+            <p id="user_para">Chào mừng bạn đến với trang chủ </p>
+            <button onclick="logout()">Đăng xuất</button>
+            <button id="veri_btn" onclick="sent_veri()">Gửi xác nhận</button>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBmnZ19dnLQibkhM-S6guKrd3cVQ-77i34",
+        authDomain: "blood-groups-searching-s-6867f.firebaseapp.com",
+        databaseURL: "https://blood-groups-searching-s-6867f.firebaseio.com",
+        projectId: "blood-groups-searching-s-6867f",
+        storageBucket: "blood-groups-searching-s-6867f.appspot.com",
+        messagingSenderId: "888365642957"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

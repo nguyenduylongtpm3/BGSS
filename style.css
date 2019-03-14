@@ -1,0 +1,99 @@
+body{
+    background: #7ebb5c;
+    
+}
+.main-div, .loggedin-div {
+    padding: 50px 10px;
+    width: 400px;
+    min-height: 100px;
+    background: white;
+    margin: 0px auto;
+    margin-top: 160px;
+    border-radius: 10px;
+    display: none;
+}
+.main-div, .loggedin-div  h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: sans-serif;
+    
+}
+.main-div input{
+    margin: 0px auto;
+    display: block;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main-div input:hover{
+    background: #ccc;
+    color:#7ebb5c;
+    border-radius: 5px;
+}
+.main-div button, .loggedin-div button{
+    background: green;
+    color: white;
+    border: 0px;
+    padding: 10px 30px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 84%;  
+    border-radius: 10px;
+}
+
+.main-div button:hover, .loggedin-div button:hover{
+    background: rgb(18, 106, 189);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    #form-login{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .main-div{
+        width: 265px;
+        margin-top: 100px;
+    }
+    .main-div{
+        font-size: 0.7em;
+    }
+}
+
+
+/* Main page */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    width: 1000px;
+    margin: 0px auto;
+}
+#menu_top{
+    background: black;
+    height: 40px;
+}
+#banner{
+    background: #ccc;
+    height: 280px;
+    width: 1000px;
+}
+#main #main_left {
+    background: blue;
+    width: 800px;
+    float: left;
+    min-height: 400px;
+    clear: left;
+}
+#main #main_right {
+    width: 200px;
+    background: rgb(122, 34, 53);
+    float: left;
+    min-height: 400px;
+}
